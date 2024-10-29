@@ -1,0 +1,127 @@
+@import url("https://fonts.googleapis.com/css2?family=Overpass:wght@100..900&display=swap");
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+html {
+  font-size: 15px;
+}
+body {
+  font-family: "Overpass", sans-serif;
+  min-height: 100vh;
+  background-color: black;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: hsl(217, 12%, 63%);
+}
+.main,
+.response {
+  max-width: 400px;
+  height: 360px;
+  padding: 30px;
+  border-radius: 16px;
+  background: radial-gradient(
+    at 50% 0%,
+    hsl(213, 19%, 18%),
+    hsl(216, 12%, 8%)
+  );
+}
+.response {
+  display: none;
+}
+.img-container {
+  width: 40px;
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  background-color: hsl(213, 19%, 18%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+h1 {
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+}
+.main-info,
+.appreciation {
+  font-size: 1rem;
+  line-height: 1.5rem;
+}
+.ratings {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 24px;
+  color: hsl(216, 12%, 54%);
+}
+.rating {
+  width: 42px;
+  background-color: hsl(213, 19%, 18%);
+  aspect-ratio: 1 / 1;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+}
+.rating.active {
+  background-color: hsl(217, 12%, 63%);
+  color: hsl(0, 0%, 100%);
+}
+.rating:hover {
+  background-color: hsl(25, 97%, 53%);
+  color: hsl(0, 0%, 100%);
+}
+button {
+  width: 100%;
+  text-transform: uppercase;
+  cursor: pointer;
+  padding: 10px;
+  background-color: hsl(25, 97%, 53%);
+  border-radius: 24px;
+  color: hsl(0, 0%, 100%);
+  font-weight: 700;
+  letter-spacing: 3px;
+  border: none;
+}
+button:hover {
+  color: hsl(25, 97%, 53%);
+  background-color: hsl(0, 0%, 100%);
+}
+.response {
+  text-align: center;
+  /* padding: ; */
+}
+.response h2 {
+  color: hsl(0, 0%, 100%);
+  margin-top: 30px;
+}
+
+.response p {
+  font-size: 1rem;
+}
+.ratings-info {
+  background-color: hsl(213, 19%, 18%);
+  padding: 6px 15px;
+  margin: 10px auto;
+  width: max-content;
+  border-radius: 20px;
+  color: hsl(25, 97%, 53%);
+  font-weight: 400;
+}
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+.attribution a {
+  text-decoration: none;
+
+  color: hsl(228, 45%, 44%);
+}
+footer {
+  position: fixed;
+  bottom: 10px;
+}
